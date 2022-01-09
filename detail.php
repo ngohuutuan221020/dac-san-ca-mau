@@ -34,8 +34,10 @@ if (isset($_GET['id'])) {
                                             <button style="background-color: #00a8ff;padding: 10px;border-radius: 20px;" name="cart" type="submit"><i class="fa fa-shopping-cart"></i> Thêm vào giỏ</button><br>
                                         </form>
                                     </span>
-                                    <p><b>Tình trạng hàng:</b> còn hàng</p>
-                                    <p><b>Thương hiệu:</b> <?php echo $value['manu_name'] ?></p>
+                                    <p><b>Số lượng: </b> <?php echo $value['soluong'] ?></p>
+                                    <p><b>Ngày sản xuất: </b> <?php echo $value['nsx'] ?></p>
+                                    <p><b>Hạn sử dụng: </b> <?php echo $value['hsd'] ?></p>
+                                    <p><b>Thương hiệu: </b> <?php echo $value['manu_name'] ?></p>
                                     <span class="detail-products">Chi tiết sản phẩm:<span class="desc-products"><?php echo  $value['description'] ?></span></span>
 
                                     <!--/product-information-->

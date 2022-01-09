@@ -49,6 +49,29 @@
                          </div>
                          <div class="features_items">
                              <!--features_items-->
+                             <h2 class="title text-center">Khuyến mãi HOT</h2>
+                             <!-- Foreach here -->
+                             <?php foreach ($product->getSaleProducts() as $value) { ?>
+                                 <div class="col-sm-4">
+                                     <div class="product-image-wrapper">
+                                         <div class="single-products">
+                                             <div class="productinfo text-center">
+                                                 <a href="detail.php?id=<?php echo $value['ID'] ?>">
+                                                     <img class="hinhanh" src="images/<?php echo $value['pro_image'] ?>" alt="" />
+                                                     <p><a class="name-products" href="detail.php?id=<?php echo $value['ID'] ?>"><?php echo $value['name'] ?></a>
+                                                     </p>
+                                                     <h2><?php echo number_format($value['price']) ?> VND</h2>
+                                                     <p></p>
+                                                     <a href="cart.php?id=<?php echo $value['ID'] ?>" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Thêm vào giỏ</a>
+                                                 </a>
+                                             </div>
+                                         </div>
+                                     </div>
+                                 </div>
+                             <?php } ?>
+                         </div>
+                         <div class="features_items">
+                             <!--features_items-->
                              <h2 class="title text-center">Top Sản Phẩm Nổi Bật</h2>
                              <!-- Foreach here -->
                              <?php foreach ($product->getPopularProducts() as $value) { ?>

@@ -411,6 +411,7 @@ hr {
 /* Content */
 
 #content {
+    margin-top: 20px;
     background: none repeat scroll 0 0 #eeeeee;
     margin-left: 220px;
     margin-right: 0;

@@ -6,6 +6,9 @@
         $price = $_POST['price'];
         $pro_image = $_FILES['fileUpload']['name'];
         $description = $_POST['description'];
+        $soluong = $_POST['soluong'];
+        $nsx = $_POST['nsx'];
+        $hsd = $_POST['hsd'];
         $feature = $_POST['feature'];
         $created_at  = date("Y-m-d h:m:s");
         $path = "../images/" . basename($pro_image);
@@ -13,7 +16,7 @@
         if(getimagesize($_FILES['fileUpload']['tmp_name'])){
             if(!file_exists($path)){
                 if(move_uploaded_file($_FILES['fileUpload']['tmp_name'],$path)){
-                    $product->addNewProduct($name, $manu_id, $type_id, $price, $pro_image, $description, $feature, $created_at);
+                    $product->addNewProduct($name, $manu_id, $type_id, $price, $pro_image, $description,$soluong,$nsx,$hsd, $feature, $created_at);
                     echo "<script>alert('Thêm thành công');window.location.href='index.php'</script>";
                 }
             }

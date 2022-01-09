@@ -85,6 +85,27 @@ if (isset($_GET['value'])) {
                                                         <input type="text" class="span11" placeholder="Giá" name="price" required/> *
                                                     </div>
                                                 </div>
+                                                <!--  -->
+                                                <div class="control-group">
+                                                    <label class="control-label">Số lượng :</label>
+                                                    <div class="controls">
+                                                        <input type="text" class="span11" placeholder="Số lượng" name="soluong" required/> *
+                                                    </div>
+                                                </div>
+                                                <!--  -->
+                                                <div class="control-group">
+                                                    <label class="control-label">Ngày sản xuất :</label>
+                                                    <div class="controls">
+                                                        <input type="datetime-local" class="span11" name="nsx" required/> *
+                                                    </div>
+                                                </div>
+                                                <!--  -->
+                                                <div class="control-group">
+                                                    <label class="control-label">Hạn sử dụng :</label>
+                                                    <div class="controls">
+                                                        <input type="datetime-local" class="span11" name="hsd" required/> *
+                                                    </div>
+                                                </div>
                                                 <!-- SP Nổi bật -->
                                                 <div class="control-group">
                                                     <label class="control-label">Nổi bật:</label>

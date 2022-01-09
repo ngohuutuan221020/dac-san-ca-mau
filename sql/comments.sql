@@ -2,10 +2,10 @@
 -- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
--- Máy chủ: 127.0.0.1:3325
--- Thời gian đã tạo: Th12 30, 2021 lúc 05:46 PM
--- Phiên bản máy phục vụ: 10.4.22-MariaDB
--- Phiên bản PHP: 7.4.27
+-- Máy chủ: 127.0.0.1
+-- Thời gian đã tạo: Th12 08, 2021 lúc 06:24 AM
+-- Phiên bản máy phục vụ: 10.4.21-MariaDB
+-- Phiên bản PHP: 8.0.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -31,7 +31,7 @@ CREATE TABLE `comments` (
   `id` int(11) NOT NULL,
   `name` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
-  `comment` mediumtext CHARACTER SET utf8 NOT NULL
+  `comment` mediumtext NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -39,9 +39,11 @@ CREATE TABLE `comments` (
 --
 
 INSERT INTO `comments` (`id`, `name`, `email`, `comment`) VALUES
-(24, 'Hieu', 'hieu2k@gmail.com', 'sản phẩm thật tuyệt'),
-(25, 'Luan', 'luancm@gmail.com', 'ngon'),
-(26, 'Tuan', 'ngohuutuan221020@gmail.com', 'sản phẩm tốt');
+(1, 'Truong Hai', 'email@email.com', 'San pham su dung rat tuyet voi.'),
+(2, 'abc', 'admin@localhost.com', '\'\r\n'),
+(3, 'Phan Nhat Quy', 'phanQuy@gmail.com', 'good job.'),
+(4, 'ABC', 'abc@gmail.com', 'ABC'),
+(11, 'quy dep trai', 'phannhatquy.tdc2019@gmail.com', 'sản phẩm sử dụng rất tốt');
 
 --
 -- Chỉ mục cho các bảng đã đổ
@@ -61,7 +63,7 @@ ALTER TABLE `comments`
 -- AUTO_INCREMENT cho bảng `comments`
 --
 ALTER TABLE `comments`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
